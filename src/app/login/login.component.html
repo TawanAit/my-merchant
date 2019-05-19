@@ -1,3 +1,53 @@
-<p>
-  login works!
-</p>
+
+
+
+<div>
+  <mat-toolbar color="primary">ร้านค้า</mat-toolbar>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-6 ">
+      <mat-card>
+        <form class="d-flex flex-column">
+          <mat-form-field>
+            <input matInput placeholder="อีเมลล์">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="รหัสผ่าน" [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+
+          <div>
+            <button mat-raised-button color="primary">เข้าสู่ระบบ</button>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div style="background-color: red" class="col-4">1</div>
+    <div style="background-color: purple" class="col">2</div>
+    <div style="background-color: orange;" class="col">3</div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+<!-- <h1>
+  <p>
+    Login EasyJung!
+  </p>
+</h1>
+<button mat-raised-button color="primary">login</button> -->
