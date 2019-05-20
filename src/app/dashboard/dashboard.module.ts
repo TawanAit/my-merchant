@@ -1,18 +1,20 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MatButtonModule, MatCardModule, MatRippleModule, MatToolbarModule } from '@angular/material';
 import { DashboardComponent } from './dashboard.component';
-import { MatCardModule, MatButtonModule, MatToolbarModule } from '@angular/material';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    
   ],
   imports: [
     CommonModule,
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
+    MatRippleModule
     
   ]
 })

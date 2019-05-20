@@ -1,15 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddressModule } from './address/address.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material';
-import { LoginModule } from './login/login.module';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { RegisterComponent } from './register/register.component';
+import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -18,6 +15,7 @@ import { RegisterModule } from './register/register.module';
 @NgModule({
   declarations: [
     AppComponent,
+    ProfileComponent
   
     
   ],
@@ -29,7 +27,8 @@ import { RegisterModule } from './register/register.module';
     
     LoginModule,
     DashboardModule,
-    RegisterModule
+    RegisterModule,
+    AddressModule
     
   ],
   providers: [],
