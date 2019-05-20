@@ -1,3 +1,36 @@
-<p>
-  dashboard works!
-</p>
+<div class="mb-3">
+  <mat-toolbar color="primary">
+    <div>ร้านค้า</div>
+    <div class="ml-auto d-flex">ออกจากระบบ</div>
+  </mat-toolbar>
+</div>
+
+
+<div class="d-flex justify-content-center">
+
+  <div class="mx-2">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>True Wallet QR</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+      <div class="d-flex">
+        <div> <button mat-raised-button color="primary">สมัครบริการ</button></div>
+        <div class="ml-auto d-flex"> <button mat-raised-button disabled>ยกเลิกบริการ</button></div>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="mx-2">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>Visa QR</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://image.dek-d.com/27/0630/6731/126576460" height="317">
+      <div class="d-flex">
+        <div><button mat-raised-button disabled>สมัครบริการ</button></div>
+        <div class="ml-auto d-flex"><button mat-raised-button color="primary">ยกเลิกบริการ</button></div>
+      </div>
+    </mat-card>
+  </div>
+</div>
