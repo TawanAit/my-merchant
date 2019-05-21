@@ -7,6 +7,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileModule } from './profile/profile.module';
 
 
 
@@ -15,7 +16,6 @@ import { ProfileComponent } from './profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileComponent
   
     
   ],
@@ -28,7 +28,8 @@ import { ProfileComponent } from './profile/profile.component';
     LoginModule,
     DashboardModule,
     RegisterModule,
-    AddressModule
+    AddressModule,
+    ProfileModule
     
   ],
   providers: [],

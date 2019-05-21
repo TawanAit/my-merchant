@@ -1,3 +1,64 @@
 <p>
   profile works!
 </p>
+
+
+<div *ngFor="let item of items">
+  <div (click)="clickItem(item)">
+    {{item}}
+  </div>
+</div>
+
+<div class=" d-flex flex-content-center">
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-6 bg-warning text-white ">
+        <div *ngFor="let service of services">
+          <div (click)="clickservices(service)">
+            {{service.name}}
+            {{service.price}}
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+</div>
+
+<div *ngFor="let total of totals">
+  <div (click)="clickTotal(total)">
+    {{total}}
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div *ngFor="let item of items">
+  <div class="item" (click)="clickedItem()">{{items}}</div>
+</div> -->
