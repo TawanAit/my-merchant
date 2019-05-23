@@ -5,10 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { LoginModule } from './login/login.module';
-import { RegisterModule } from './register/register.module';
-import { ProfileComponent } from './profile/profile.component';
+import { MerchantModule } from './merchant/merchant.module';
 import { ProfileModule } from './profile/profile.module';
-import { MerchantComponent } from './merchant/merchant.component';
+import { RegisterModule } from './register/register.module';
 
 
 
@@ -17,6 +16,7 @@ import { MerchantComponent } from './merchant/merchant.component';
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserAnimationsModule,
@@ -29,6 +29,7 @@ import { MerchantComponent } from './merchant/merchant.component';
     RegisterModule,
     AddressModule,
     ProfileModule,
+    MerchantModule,
     
     
   ],
