@@ -15,8 +15,8 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
-  rdashboard(){
-    this.router.navigate(['']);
+  logout(){
+    this.router.navigate(['/login']);
   }
 
 }
