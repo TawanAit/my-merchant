@@ -8,6 +8,7 @@ import { LoginModule } from './login/login.module';
 import { RegisterModule } from './register/register.module';
 import { ProfileComponent } from './profile/profile.component';
 import { ProfileModule } from './profile/profile.module';
+import { MerchantComponent } from './merchant/merchant.component';
 
 
 
@@ -16,8 +17,6 @@ import { ProfileModule } from './profile/profile.module';
 @NgModule({
   declarations: [
     AppComponent,
-  
-    
   ],
   imports: [
     BrowserAnimationsModule,
@@ -29,7 +28,8 @@ import { ProfileModule } from './profile/profile.module';
     DashboardModule,
     RegisterModule,
     AddressModule,
-    ProfileModule
+    ProfileModule,
+    
     
   ],
   providers: [],
