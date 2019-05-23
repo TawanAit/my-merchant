@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -20,17 +21,16 @@ export class ProfileComponent implements OnInit {
   ];
 
   totals: any[] = [
-    30000,
-    3000,
-    300,
-    30,
-    3,
-    'Hello',
+    {n: 'ffff', i: 300},
+    {n: 'aaaa', i: 1000},
+    {n: 'pppp', i: 5700}
     
   ];
 
 
-  constructor() {
+  constructor(
+    private router:Router
+  ) {
 
   }
   ngOnInit() {
@@ -46,6 +46,10 @@ export class ProfileComponent implements OnInit {
 
   clickTotal(total:any){
     alert(total);
+  }
+
+  logout(){
+    this.router.navigate(['/login']);
   }
 
 
