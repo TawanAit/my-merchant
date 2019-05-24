@@ -5,7 +5,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
-<<<<<<< HEAD
 import { MerchantComponent } from './merchant/merchant.component';
 
 const routes: Routes = [
@@ -18,15 +17,6 @@ const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full' },
 
-=======
-import { HomeComponent } from './home/home.component';
-
-const routes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'home', component:HomeComponent},
->>>>>>> 24-may-2019
 ];
 
 @NgModule({
