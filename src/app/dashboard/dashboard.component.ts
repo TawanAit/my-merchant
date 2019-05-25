@@ -19,4 +19,15 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  home(){
+    this.router.navigate(['/home']);
+  }
+
+  profile(){
+    this.router.navigate(['/profile']);
+  }
+
+  address(){
+    this.router.navigate(['/address'])
+  }
 }

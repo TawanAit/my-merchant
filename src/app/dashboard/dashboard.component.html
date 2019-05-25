@@ -1,6 +1,14 @@
 <div class="mb-3">
   <mat-toolbar color="primary">
-    <div>ร้านค้า</div>
+    <div class="mr-4">ร้านค้า</div>
+    <div class="mr-4">|</div>
+    <div class="mr-4" (click)="home()">หน้าหลัก</div>
+    <div class="mr-4">|</div>
+    <div class="mr-4" (click)="profile()">โปรไฟล์</div>
+    <div class="mr-4">|</div>
+    <div class="mr-4" (click)="address()">ข้อมูลลูกค้า</div>
+    
+
     <div class="ml-auto d-flex">
       <span (click)="logout()">ออกจากระบบ</span>
     </div>
