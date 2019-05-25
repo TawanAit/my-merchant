@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -16,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatMenuModule,
     MatToolbarModule,
     MatButtonModule,
+    MatFormFieldModule,
   ]
 })
 export class HomeModule { }
