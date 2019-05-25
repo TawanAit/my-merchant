@@ -8,6 +8,7 @@ import { LoginModule } from './login/login.module';
 import { MerchantModule } from './merchant/merchant.module';
 import { ProfileModule } from './profile/profile.module';
 import { RegisterModule } from './register/register.module';
+import { HomeModule } from './home/home.module';
 
 
 
@@ -30,6 +31,7 @@ import { RegisterModule } from './register/register.module';
     AddressModule,
     ProfileModule,
     MerchantModule,
+    HomeModule
     
     
   ],
