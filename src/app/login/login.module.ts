@@ -6,6 +6,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LoginComponent } from './login.component';
 import {MatIconModule} from '@angular/material/icon';
+import { AuthService } from '../services/auth.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,11 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    
+    FormsModule,
+  ],providers:[
+    AuthService,
   ]
 })
 export class LoginModule { 
