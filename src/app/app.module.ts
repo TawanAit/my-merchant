@@ -11,6 +11,7 @@ import { LoginModule } from './login/login.module';
 import { MerchantModule } from './merchant/merchant.module';
 import { ProfileModule } from './profile/profile.module';
 import { RegisterModule } from './register/register.module';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 
 
@@ -21,8 +22,10 @@ import { RegisterModule } from './register/register.module';
   ],
   imports: [
     BrowserAnimationsModule,
-    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AppRoutingModule,
+
     
     LoginModule,
     DashboardModule,

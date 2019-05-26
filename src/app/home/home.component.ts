@@ -16,6 +16,6 @@ export class HomeComponent implements OnInit {
   }
 
   logout(){
-    this.router.navigate(['/dashbroard'])
+    this.router.navigate([''])
   }
 }
