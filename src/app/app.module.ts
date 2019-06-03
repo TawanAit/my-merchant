@@ -13,13 +13,14 @@ import { ProfileModule } from './profile/profile.module';
 import { RegisterModule } from './register/register.module';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { ManageServiceComponent } from './manage-service/manage-service.component';
+import { ManageServiceModule } from './manage-service/manage-service.module';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ManageServiceComponent,
+    
 
   ],
   imports: [
@@ -35,7 +36,8 @@ import { ManageServiceComponent } from './manage-service/manage-service.componen
     AddressModule,
     ProfileModule,
     MerchantModule,
-    HomeModule
+    HomeModule,
+    ManageServiceModule,
     
   ],
   providers: [],
