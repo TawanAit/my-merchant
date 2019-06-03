@@ -30,4 +30,8 @@ export class DashboardComponent implements OnInit {
   address(){
     this.router.navigate(['/address'])
   }
+
+  merchant(){
+    this.router.navigate(['/merchant']);
+  }
 }

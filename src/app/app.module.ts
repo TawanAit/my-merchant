@@ -12,12 +12,14 @@ import { MerchantModule } from './merchant/merchant.module';
 import { ProfileModule } from './profile/profile.module';
 import { RegisterModule } from './register/register.module';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { ManageServiceComponent } from './manage-service/manage-service.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    ManageServiceComponent,
 
   ],
   imports: [
