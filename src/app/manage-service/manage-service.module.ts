@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MatToolbarModule } from '@angular/material';
 import { ManageServiceComponent } from './manage-service.component';
-import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -11,7 +11,10 @@ import {MatTableModule} from '@angular/material/table';
   
   imports: [
     CommonModule,
-    MatTableModule
+    MatToolbarModule,
+   
+ 
+
   ]
 })
 export class ManageServiceModule { }

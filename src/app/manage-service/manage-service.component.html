@@ -1,3 +1,51 @@
-<p>
-  manage-service works!
-</p>
+<div class="mb-3">
+  <mat-toolbar color="primary">
+    <div class="mr-auto d-flex">ร้านค้า</div>
+    <div routerLink="/login">
+      <span (click)="logout()">ออกจากระบบ</span>
+    </div>
+  </mat-toolbar>
+</div>
+
+
+
+<div class="d-flex  align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-8">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+</div>
