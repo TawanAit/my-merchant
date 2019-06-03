@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { ProfileComponent } from './profile.component';
 import {MatButtonModule} from '@angular/material/button';
+import { HeaderModule } from '../header/header.module';
 
 
 
@@ -18,6 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
+
+    HeaderModule,
   ]
 })
 export class ProfileModule { }

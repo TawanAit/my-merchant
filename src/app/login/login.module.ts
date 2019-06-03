@@ -8,6 +8,7 @@ import { LoginComponent } from './login.component';
 import {MatIconModule} from '@angular/material/icon';
 import { AuthService } from '../services/auth.service';
 import { FormsModule } from '@angular/forms';
+import { HeaderModule } from '../header/header.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+
+    HeaderModule,
     
     FormsModule,
   ],providers:[

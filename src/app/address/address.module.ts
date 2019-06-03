@@ -5,6 +5,7 @@ import { AddressComponent } from './address.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { HeaderModule } from '../header/header.module';
 
 
 
@@ -21,7 +22,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatToolbarModule,
     MatCardModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+
+
+
+    HeaderModule,
 
 
 

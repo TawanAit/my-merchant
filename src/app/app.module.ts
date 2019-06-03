@@ -14,12 +14,15 @@ import { RegisterModule } from './register/register.module';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { ManageServiceComponent } from './manage-service/manage-service.component';
 import { ManageServiceModule } from './manage-service/manage-service.module';
+import { HeaderComponent } from './header/header.component';
+import { HeaderModule } from './header/header.module';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     
 
   ],

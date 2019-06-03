@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatButtonModule, MatCardModule, MatRippleModule, MatToolbarModule } from '@angular/material';
 import { DashboardComponent } from './dashboard.component';
+import { HeaderModule } from '../header/header.module';
 
 
 @NgModule({
@@ -14,7 +15,9 @@ import { DashboardComponent } from './dashboard.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatRippleModule
+    MatRippleModule,
+
+    HeaderModule,
     
   ]
 })

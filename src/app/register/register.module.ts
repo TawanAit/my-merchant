@@ -7,6 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RegisterComponent } from './register.component';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
+import { HeaderModule } from '../header/header.module';
 
 
 
@@ -29,8 +30,9 @@ import { RouterModule } from '@angular/router';
     MatButtonModule, 
     MatInputModule,
     MatIconModule,
-    RouterModule
+    RouterModule,
     
+    HeaderModule
 
   ]
 })

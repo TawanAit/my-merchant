@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material';
 import { ManageServiceComponent } from './manage-service.component';
+import { HeaderModule } from '../header/header.module';
 
 
 @NgModule({
@@ -12,6 +13,8 @@ import { ManageServiceComponent } from './manage-service.component';
   imports: [
     CommonModule,
     MatToolbarModule,
+
+    HeaderModule,
    
  
 
