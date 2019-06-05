@@ -14,14 +14,18 @@ import { ManageServiceComponent } from './manage-service/manage-service.componen
 
 const routes: Routes = [
   { path: 'address', component: AddressComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'profile', component: ProfileComponent},
+  { path: 'login/x', component: LoginComponent },
+  // { path: 'profile', component: ProfileComponent},
   { path: 'register', component: RegisterComponent },
   { path: 'merchant', component: MerchantComponent},
-  { path: 'manage-service', component:ManageServiceComponent},
+  // { path: 'manage-service', component:ManageServiceComponent},
   { path: 'home', component:HomeComponent},
-  { path: '', component: DashboardComponent },
-  // { path: '**', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'dashboard', children:[
+    { path: 'profile', component:ProfileComponent},
+    { path: 'services', component:ManageServiceComponent},
+    { path: '',component:DashboardComponent}
+  ]},
+  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
 
 ];
 
@@ -29,9 +33,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-
-
-
 
 export class AppRoutingModule { }
 

@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
   }
 
   profile(){
-    this.router.navigate(['/profile']);
+    this.router.navigate(['/dashboard/profile']);
   }
 
   address(){
@@ -33,5 +33,8 @@ export class DashboardComponent implements OnInit {
 
   merchant(){
     this.router.navigate(['/merchant']);
+  }
+  services(){
+    this.router.navigate(['/dashboard/services'])
   }
 }

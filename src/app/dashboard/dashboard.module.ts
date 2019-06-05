@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatCardModule, MatRippleModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatRippleModule, MatToolbarModule, MatListModule } from '@angular/material';
 import { DashboardComponent } from './dashboard.component';
 import { HeaderModule } from '../header/header.module';
 
@@ -16,6 +16,7 @@ import { HeaderModule } from '../header/header.module';
     MatButtonModule,
     MatToolbarModule,
     MatRippleModule,
+    MatListModule,
 
     HeaderModule,
     
