@@ -13,12 +13,14 @@ import { ManageServiceModule } from './manage-service/manage-service.module';
 import { MerchantModule } from './merchant/merchant.module';
 import { ProfileModule } from './profile/profile.module';
 import { RegisterModule } from './register/register.module';
+import { PlayComponent } from './play/play.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    PlayComponent,
     
     
 

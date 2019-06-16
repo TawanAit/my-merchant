@@ -8,13 +8,14 @@ import { MerchantComponent } from './merchant/merchant.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { ManageServiceComponent } from './manage-service/manage-service.component';
+import { PlayComponent } from './play/play.component';
 
 
 
 
 const routes: Routes = [
   { path: 'address', component: AddressComponent },
-  { path: 'login/x', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   // { path: 'profile', component: ProfileComponent},
   { path: 'register', component: RegisterComponent },
   { path: 'merchant', component: MerchantComponent},
@@ -23,9 +24,10 @@ const routes: Routes = [
   { path: 'dashboard', children:[
     { path: 'profile', component:ProfileComponent},
     { path: 'services', component:ManageServiceComponent},
-    { path: '',component:DashboardComponent}
+    
   ]},
-  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'play',component:PlayComponent},
+  { path: '**', redirectTo: 'play', pathMatch: 'full' },
 
 ];
 
