@@ -7,7 +7,7 @@
       <div class="col-8">
         <mat-card class="card">
           <mat-card-header>
-              <mat-card-title>ข้อมูลของท่าน</mat-card-title>
+            <mat-card-title>ข้อมูลของท่าน</mat-card-title>
           </mat-card-header>
           <form class="d-flex flex-column">
             <mat-form-field class="full-width">
@@ -25,3 +25,14 @@
     </div>
   </div>
 </div>
+
+
+<form  class="d-flex flex-column" [formGroup]="form">
+  <mat-form-field>
+    <input matInput placeholder="ชื่อ" formControlName="firstName">
+  </mat-form-field>
+
+  <mat-form-field>
+      <input matInput placeholder="นามสกุล" formControlName="lastName">
+    </mat-form-field>
+</form>

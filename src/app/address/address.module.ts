@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material';
-import { AddressComponent } from './address.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { HeaderModule } from '../header/header.module';
-
+import { AddressComponent } from './address.component';
 
 
 
@@ -23,10 +23,13 @@ import { HeaderModule } from '../header/header.module';
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-
-
-
     HeaderModule,
+
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+
 
 
 
