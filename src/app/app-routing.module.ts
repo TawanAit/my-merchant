@@ -21,13 +21,16 @@ const routes: Routes = [
   { path: 'merchant', component: MerchantComponent},
   // { path: 'manage-service', component:ManageServiceComponent},
   { path: 'home', component:HomeComponent},
-  { path: 'dashboard', children:[
-    { path: 'profile', component:ProfileComponent},
-    { path: 'services', component:ManageServiceComponent},
+  { path: 'dashboard', component: DashboardComponent},
+  { path: 'profile', component:ProfileComponent},
+  { path: 'services', component:ManageServiceComponent},
+  // { path: 'dashboard', children:[
+  //   { path: 'profile', component:ProfileComponent},
+  //   { path: 'services', component:ManageServiceComponent},
     
-  ]},
-  { path: 'play',component:PlayComponent},
-  { path: '**', redirectTo: 'play', pathMatch: 'full' },
+  // ]},
+  { path: 'play', component:PlayComponent},
+  { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
 
 ];
 
