@@ -23,8 +23,11 @@ export class DashboardComponent implements OnInit {
     this.router.navigate(['/home']);
   }
 
+  // profile(){
+  //   this.router.navigate(['/dashboard/profile']);
+  // }
   profile(){
-    this.router.navigate(['/dashboard/profile']);
+    this.router.navigate(['/profile']);
   }
 
   address(){
@@ -34,7 +37,12 @@ export class DashboardComponent implements OnInit {
   merchant(){
     this.router.navigate(['/merchant']);
   }
+  // services(){
+  //   this.router.navigate(['/dashboard/services'])
+  // }
   services(){
-    this.router.navigate(['/dashboard/services'])
+    this.router.navigate(['/services'])
   }
 }
+
+
