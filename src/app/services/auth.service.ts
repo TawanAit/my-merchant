@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Router } from "@angular/router";
 import { AngularFireAuth } from "@angular/fire/auth";
+import { Router } from "@angular/router";
 import { User } from 'firebase';
 
 @Injectable()
 export class AuthService {
   user: User;
+
 
   constructor(
     private afAuth: AngularFireAuth,
@@ -20,8 +21,13 @@ export class AuthService {
       }
     })
   }
-
+//basic authentication คือการล็อคอินผ่านทาง อีเมล password ที่สร้างขึ้นมาเอง
   async login(email: string, password: string): Promise<void> {
     await this.afAuth.auth.signInWithEmailAndPassword(email, password)
+  }
+
+  anonymousLogin(){
+    return this.afAuth.auth.signInAnonymously();
+
   }
 }
