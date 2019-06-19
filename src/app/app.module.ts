@@ -11,9 +11,12 @@ import { HomeModule } from './home/home.module';
 import { LoginModule } from './login/login.module';
 import { ManageServiceModule } from './manage-service/manage-service.module';
 import { MerchantModule } from './merchant/merchant.module';
+import { PlayComponent } from './play/play.component';
 import { ProfileModule } from './profile/profile.module';
 import { RegisterModule } from './register/register.module';
-import { PlayComponent } from './play/play.component';
+import { MatCardModule } from '@angular/material';
+
+
 
 
 
@@ -40,6 +43,10 @@ import { PlayComponent } from './play/play.component';
     MerchantModule,
     HomeModule,
     ManageServiceModule,
+
+    
+    MatCardModule,
+    
     
   ],
   providers: [],
