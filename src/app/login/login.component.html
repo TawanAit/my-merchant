@@ -6,13 +6,13 @@
       <div class="col"></div>
       <div class="col-6"> -->
         <mat-card class="login">
-          <form class="d-flex flex-column">
+          <form [formGroup]="fromgroup" class="d-flex flex-column">
             <mat-form-field>
-              <input matInput placeholder="อีเมล">
+              <input matInput placeholder="email" formControlName="email">
             </mat-form-field>
 
             <mat-form-field>
-              <input matInput placeholder="รหัสผ่าน" [type]="hide ? 'password' : 'text'">
+              <input matInput placeholder="password" formControlName="password" [type]="hide ? 'password' : 'text'">
               <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </mat-form-field>
 

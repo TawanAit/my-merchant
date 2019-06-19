@@ -7,7 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { LoginComponent } from './login.component';
 import {MatIconModule} from '@angular/material/icon';
 import { AuthService } from '../services/auth.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderModule } from '../header/header.module';
 
 @NgModule({
@@ -25,7 +25,8 @@ import { HeaderModule } from '../header/header.module';
 
     HeaderModule,
     
-    FormsModule,
+    // FormsModule,
+    ReactiveFormsModule,
   ],providers:[
     AuthService,
   ]
