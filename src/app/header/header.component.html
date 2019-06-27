@@ -1,5 +1,17 @@
-<div class="md-3">
-    <mat-toolbar color="primary">
-      <span (click)="dashboard()">ร้านค้า</span>
-    </mat-toolbar>
-  </div>
+<div class="title md-3">
+  <mat-toolbar color="primary">
+
+        <div (click)="dashboard()">
+            <img src="/assets/download.jpeg" width="30%"class="rounded-circle">
+            <span>EasyJung</span>
+        </div>
+      
+    <div class="ml-auto d-flex">
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ค้นหา</button>
+      </form>
+    </div>
+  </mat-toolbar>
+
+</div>

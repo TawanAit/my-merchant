@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { MatButtonModule, MatCardModule, MatRippleModule, MatToolbarModule, MatListModule } from '@angular/material';
-import { DashboardComponent } from './dashboard.component';
+import { MatButtonModule, MatCardModule, MatListModule, MatRippleModule, MatToolbarModule } from '@angular/material';
 import { HeaderModule } from '../header/header.module';
+import { DashboardComponent } from './dashboard.component';
+
 
 
 @NgModule({
@@ -17,6 +18,8 @@ import { HeaderModule } from '../header/header.module';
     MatToolbarModule,
     MatRippleModule,
     MatListModule,
+
+   
 
     HeaderModule,
     

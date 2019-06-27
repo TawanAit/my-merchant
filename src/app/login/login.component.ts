@@ -36,16 +36,13 @@ export class LoginComponent implements OnInit {
     }).catch((reson)=>{
       alert ("reson");
     });
+
     // this.authService.anonymousLogin().then(() =>{
     //   this.router.navigate(['/play']);
     // })
 
-
-  
-
   }
   
-
   register(){
     this.router.navigate(['/register']);
   }
